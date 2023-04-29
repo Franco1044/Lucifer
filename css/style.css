@@ -98,8 +98,6 @@ p {
     margin-right: 4%;
 }
 
-
-
 .accordion-item{
     background-color: antiquewhite;
     opacity: 35%;
@@ -184,7 +182,11 @@ nav ul {
     width: 100%;
 }
 
-.carousel-inner{
+.calecita{
+    justify-content: center;
+}
+
+.calecita-principal{
     text-align: center;
 }
 
