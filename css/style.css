@@ -14,8 +14,9 @@ nav ul li {
     padding: 20px;
 }
 
-nav ul li a {
+nav ul li a{
     font-size: x-large;
+    font-family: 'Franklin Gothic Medium';
     text-align: center;
     text-decoration: none;
     color: white;
@@ -23,6 +24,7 @@ nav ul li a {
 
 h1 {
     text-align: center;
+    font-family: 'Franklin Gothic Medium';
 }
 
 main h2 {
@@ -30,7 +32,8 @@ main h2 {
     text-align: center;
 }
 
-.galeria h2, .historia div p{
+.galeria h2,
+.historia div p {
     margin-left: 4%;
     margin-right: 4%;
     border-radius: 20px;
@@ -71,15 +74,19 @@ h3 {
     height: 285px;
     overflow: auto;
 }
-.video{
-    align-items: center;
+.inicio img{
+    width: 100%;
+}
+
+ .video{
+    text-align: center;
+ }
+ 
+
+.pie-pagina{
     text-align: center;
 }
-section{
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-}
+
 
 p {
     font-size: larger;
@@ -98,7 +105,7 @@ p {
     margin-right: 4%;
 }
 
-.accordion-item{
+.accordion-item {
     background-color: antiquewhite;
     opacity: 35%;
     margin-bottom: 15px;
@@ -107,14 +114,15 @@ p {
     border-radius: 10px;
 }
 
-.accordion-header{
+.accordion-header {
     background-color: antiquewhite;
     text-align: center;
     opacity: 100%;
     border-radius: 10px;
 
 }
-.accordion-button{
+
+.accordion-button {
     background-color: antiquewhite;
     font-size: 30px;
     justify-content: center;
@@ -122,7 +130,7 @@ p {
 
 }
 
-.accordion-body p{
+.accordion-body p {
     background-color: antiquewhite;
     opacity: 100%;
     font-size: 20px;
@@ -148,17 +156,11 @@ nav ul {
     justify-content: space-around;
 }
 
-
-.inicial {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.galeria div{
+.galeria div {
     text-align: center;
- }
-.actores div{
+}
+
+.actores div {
     display: flex;
     justify-content: center;
     margin-top: 1%;
@@ -166,7 +168,7 @@ nav ul {
     margin-right: 4%;
 }
 
-.actores .mobile{
+.actores .mobile {
     display: flex;
     justify-content: center;
     margin-top: 1%;
@@ -174,68 +176,82 @@ nav ul {
     margin-right: 4%;
 }
 
-.actores div img{
+.actores div img {
     width: 50%;
 }
 
-.actores .mobile img{
+.actores .mobile img {
     width: 100%;
 }
 
-.calecita{
+.calecita {
     justify-content: center;
 }
 
-.calecita-principal{
+.calecita-principal {
     text-align: center;
 }
 
-.carousel-control-next-icon{
+.carousel-control-next-icon {
     background-image: url(../imagenes/next.png);
 }
 
-.carousel-control-prev-icon{
+.carousel-control-prev-icon {
     background-image: url(../imagenes/prev.png);
 }
 
-.carousel-item{
+.carousel-item {
     margin-bottom: 25px;
     color: brown;
 }
 
+.mobile div div {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
 
 
 
 
 /*-----------*/
 
-.actores .mobile{ 
+.actores .mobile {
     display: none;
 }
 
-
 @media (max-width: 575px) {
-    .actores .mobile{
+    .actores .mobile {
         display: block;
     }
-    .actores{
+
+    .actores {
         justify-content: center;
     }
-    .actores .desktop{
+
+    .actores .desktop {
         display: none;
     }
 }
-  
 
-.inicio .mobile{
+
+.inicio .mobile {
     display: none;
 }
 
 @media (max-width: 575px) {
-    .inicio .mobile{
+    .inicio .mobile {
         display: block;
     }
-    .inicio .desktop{
+
+    .inicio .desktop {
         display: none;
     }
 }
+.pie-pagina div a{
+    width: 100%;
+}
+
+ #map{
+    width: 100%;
+ }
