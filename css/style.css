@@ -14,34 +14,27 @@ nav ul li {
     padding: 20px;
 }
 
-nav ul li a{
+nav ul li a {
     font-size: x-large;
-    font-family: 'Franklin Gothic Medium';
+    font-family: 'Ubuntu', sans-serif;
     text-align: center;
     text-decoration: none;
     color: white;
 }
 
 h1 {
+    padding: 25px 0px 25px 0px;
     text-align: center;
-    font-family: 'Franklin Gothic Medium';
+    font-family: 'Ubuntu', sans-serif;
+    font-size: xx-large;
+    color: aliceblue;
 }
 
-main h2 {
-    padding: 15px 10px 15px 10px;
-    text-align: center;
-}
-
-.galeria h2,
 .historia div p {
     margin-left: 4%;
     margin-right: 4%;
     border-radius: 20px;
-}
-
-main h1 {
-    text-align: center;
-    padding: 25px 0px 25px 0px;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 body {
@@ -51,93 +44,100 @@ body {
     background-size: cover;
 }
 
-h1 {
-    font-size: xx-large;
-    color: aliceblue;
-}
-
-h2 {
-    background-color: antiquewhite;
-    opacity: 50%;
-}
-
-h3 {
-    font-size: x-large;
-    color: rgb(255, 255, 255);
-    text-align: center;
-}
-
 .inicio p {
     font-size: 22px;
     background-color: antiquewhite;
     opacity: 35%;
     height: 285px;
     overflow: auto;
+    font-family: 'Ubuntu', sans-serif;
+    border-style: solid;
+    border-color: rgb(85, 0, 78);
+    border-width: 2px;
 }
-.inicio img{
+
+.inicio img {
     width: 100%;
 }
 
- .video{
-    text-align: center;
- }
- 
-
-.pie-pagina{
+.video {
     text-align: center;
 }
 
 
-p {
-    font-size: larger;
-    background-color: antiquewhite;
-    opacity: 35%;
-}
-
-.actores div p {
-    height: 350px;
-    overflow: auto;
-}
-
-.historia div p {
+.pie-pagina {
     text-align: center;
-    margin-left: 4%;
-    margin-right: 4%;
 }
 
-.accordion-item {
-    background-color: antiquewhite;
-    opacity: 35%;
+
+
+.acordion {
+    opacity: 50%;
     margin-bottom: 15px;
     margin-left: 4%;
     margin-right: 4%;
     border-radius: 10px;
 }
 
-.accordion-header {
+.acordion-cabeza {
     background-color: antiquewhite;
+    color: rgb(0, 0, 0);
+    opacity: 80%;
+    font-size: 50px;
+    list-style: none;
+    cursor: pointer;
     text-align: center;
-    opacity: 100%;
-    border-radius: 10px;
-
+    font-family: 'Ubuntu', sans-serif;
+    border-width: 20px;
+    font-weight: bold;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: rgb(85, 0, 78);
+    border-width: 2px;
 }
 
-.accordion-button {
+.acordion-cuerpo {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
     background-color: antiquewhite;
-    font-size: 30px;
-    justify-content: center;
-    border-radius: 10px;
-
+    opacity: 55%;
+    font-size: 25px;
+    font-family: 'Ubuntu', sans-serif;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: rgb(85, 0, 78);
+    border-width: 2px;
 }
 
-.accordion-body p {
+.acordion-elementos {
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.historia div p {
+    text-align: center;
+    margin-left: 4%;
+    margin-right: 4%;
+    font-family: 'Ubuntu', sans-serif;
+}
+p {
+    font-size: larger;
     background-color: antiquewhite;
-    opacity: 100%;
-    font-size: 20px;
-    border-radius: 10px;
-
+    opacity: 35%;
+    font-family: 'Ubuntu', sans-serif;
+    border-style: solid;
+    border-color: rgb(85, 0, 78);
+    border-width: 2px;
 }
 
+.actores div p {
+    height: 350px;
+    overflow: auto;
+    font-family: 'Ubuntu', sans-serif;
+    border-style: solid;
+    border-color: rgb(85, 0, 78);
+    border-width: 2px;
+}
 .contacto div {
     text-align: center;
 }
@@ -146,6 +146,7 @@ div ul li label {
     font-size: larger;
     background-color: antiquewhite;
     opacity: 35%;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 /*posicion de elementos*/
@@ -176,33 +177,36 @@ nav ul {
     margin-right: 4%;
 }
 
-.actores div img {
-    width: 50%;
-}
-
 .actores .mobile img {
     width: 100%;
 }
 
 .calecita {
     justify-content: center;
+    text-align: center;
+}
+
+.calecita-completa {
+    padding-bottom: 40px;
+    padding-top: 40px;
 }
 
 .calecita-principal {
     text-align: center;
 }
 
-.carousel-control-next-icon {
+.calecita-derecha-icon {
     background-image: url(../imagenes/next.png);
 }
 
-.carousel-control-prev-icon {
+.calecita-izquierda-icon {
     background-image: url(../imagenes/prev.png);
 }
 
-.carousel-item {
-    margin-bottom: 25px;
-    color: brown;
+.calecita-contenedor h5{
+    font-size: 25px;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
 }
 
 .mobile div div {
@@ -210,9 +214,6 @@ nav ul {
     text-align: center;
     justify-content: center;
 }
-
-
-
 
 /*-----------*/
 
@@ -248,10 +249,11 @@ nav ul {
         display: none;
     }
 }
-.pie-pagina div a{
+
+.pie-pagina div a {
     width: 100%;
 }
 
- #map{
+#map {
     width: 100%;
- }
+}
