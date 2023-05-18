@@ -1,0 +1,41 @@
+.actores {
+    div {
+        display: flex;
+        @include posicion( center, center);
+        margin-top: 1%;
+        margin-left: 4%;
+        margin-right: 4%;
+
+        p {
+            @extend %tipografia;
+            @include opacidad(antiquewhite, 35%);
+            overflow: auto;
+            border-style: map-get($borde, b-s);
+            border-color: map-get($borde , b-c);
+            border-width: map-get($borde, b-w);
+        }
+    }
+}
+
+.actores .desktop p {
+    height: 375px;
+}
+
+.actores .mobile {
+    display: none;
+}
+
+
+@media (max-width: 800px) {
+    .actores .mobile {
+        display: block;
+    }
+
+    .actores {
+        justify-content: center;
+    }
+
+    .actores .desktop {
+        display: none;
+    }
+}

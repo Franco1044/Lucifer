@@ -1,0 +1,46 @@
+.galeria {
+    div {
+        @include posicion (center, center);
+    }
+
+    .calecita {
+        @include posicion (center, center);
+
+        .calecita-completa {
+            padding-bottom: 40px;
+            padding-top: 40px;
+
+            .calecita-contenedor {
+                h5 {
+                    @extend %tipografia;
+                    color: white;
+                }
+                .calecita-elementos div{
+                    @include posicion (center, center);
+
+                }
+
+                .calecita-derecha-icon {
+                    background-image: url(../imagenes/next.png);
+                }
+
+                .calecita-izquierda-icon {
+                    background-image: url(../imagenes/prev.png);
+                }
+            }
+        }
+    }
+}
+
+.galeria .mobile{
+    display: none;
+}
+
+@media (max-width: 875px){
+    .galeria .mobile{
+        display: block;
+    }
+    .galeria .desktop{
+        display: none;
+    }
+}

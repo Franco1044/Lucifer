@@ -1,0 +1,51 @@
+main {
+    h1 {
+        padding: 25px 0px 25px 0px;
+        @include posicion (center, center);
+        @extend %tipografia;
+        color: antiquewhite;
+    }
+}
+
+.inicio {
+    p {
+        @extend %tipografia;
+        @include opacidad(antiquewhite, 35%);
+        overflow: auto;
+        border-style: map-get($borde, b-s);
+        border-color: map-get($borde, b-c);
+        border-width: map-get($borde, b-w);
+
+    }
+
+    .scroll-pc {
+        height: 285px;
+
+    }
+
+    img {
+        width: 100%
+    }
+}
+
+
+.video {
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+
+.inicio .mobile {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .inicio .mobile {
+        display: block;
+    }
+
+    .inicio .desktop {
+        display: none;
+    }
+}

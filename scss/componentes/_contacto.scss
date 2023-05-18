@@ -1,0 +1,19 @@
+div {
+    @include posicion(center, center);
+
+    form {
+
+        ul {
+
+            li {
+                
+                label {
+                    @extend %tipografia;
+                    text-decoration: none;
+                    list-style: none;
+                    @include opacidad(antiquewhite, 55%);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,8 @@
+.pie-pagina {
+    @include posicion(center, center);
+
+    div a {
+        width: 100%;
+    }
+}
+

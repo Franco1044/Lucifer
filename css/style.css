@@ -1,259 +1,203 @@
-* {
-    padding: 0;
-    margin: 0;
+div form ul li label, .historia .acordion .acordion-elementos .acordion-cuerpo, .historia .acordion .acordion-elementos .acordion-cabeza, .actores div p, .galeria .calecita .calecita-completa .calecita-contenedor h5, header nav ul li a, .inicio p, main h1 {
+  font-size: 22px;
+  font-weight: bold;
+  font-family: "Ubuntu", sans-serif;
 }
 
-nav {
-    text-align: center;
+.pie-pagina {
+  text-align: center;
+  justify-content: center;
+}
+.pie-pagina div a {
+  width: 100%;
 }
 
-
-nav ul li {
-    display: inline;
-    list-style: none;
-    padding: 20px;
-}
-
-nav ul li a {
-    font-size: x-large;
-    font-family: 'Ubuntu', sans-serif;
-    text-align: center;
-    text-decoration: none;
-    color: white;
-}
-
-h1 {
-    padding: 25px 0px 25px 0px;
-    text-align: center;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: xx-large;
-    color: aliceblue;
-}
-
-.historia div p {
-    margin-left: 4%;
-    margin-right: 4%;
-    border-radius: 20px;
-    font-family: 'Ubuntu', sans-serif;
-}
-
-body {
-    background-image: url(https://th.bing.com/th/id/R.fe1e5b7e184e1755dd207e3b0937a6df?rik=S%2f6M%2bXS9%2fGUF2A&pid=ImgRaw&r=0);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+main h1 {
+  padding: 25px 0px 25px 0px;
+  text-align: center;
+  justify-content: center;
+  color: antiquewhite;
 }
 
 .inicio p {
-    font-size: 22px;
-    background-color: antiquewhite;
-    opacity: 35%;
-    height: 285px;
-    overflow: auto;
-    font-family: 'Ubuntu', sans-serif;
-    border-style: solid;
-    border-color: rgb(85, 0, 78);
-    border-width: 2px;
+  background-color: antiquewhite;
+  opacity: 35%;
+  overflow: auto;
+  border-style: solid;
+  border-color: rgb(85, 0, 78);
+  border-width: 2px;
 }
-
+.inicio .scroll-pc {
+  height: 285px;
+}
 .inicio img {
-    width: 100%;
+  width: 100%;
 }
 
 .video {
-    text-align: center;
+  text-align: center;
+  padding-top: 20px;
 }
 
-
-.pie-pagina {
-    text-align: center;
+.inicio .mobile {
+  display: none;
 }
 
-
-
-.acordion {
-    opacity: 50%;
-    margin-bottom: 15px;
-    margin-left: 4%;
-    margin-right: 4%;
-    border-radius: 10px;
+@media (max-width: 800px) {
+  .inicio .mobile {
+    display: block;
+  }
+  .inicio .desktop {
+    display: none;
+  }
+}
+header nav {
+  text-align: center;
+  justify-content: center;
+}
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  transition: 2s;
+}
+header nav ul :hover {
+  transform: scale(2);
+}
+header nav ul li {
+  display: inline;
+  list-style: none;
+  padding: 20px;
+}
+header nav ul li a {
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
 }
 
-.acordion-cabeza {
-    background-color: antiquewhite;
-    color: rgb(0, 0, 0);
-    opacity: 80%;
-    font-size: 50px;
-    list-style: none;
-    cursor: pointer;
-    text-align: center;
-    font-family: 'Ubuntu', sans-serif;
-    border-width: 20px;
-    font-weight: bold;
-    border-radius: 15px;
-    border-style: solid;
-    border-color: rgb(85, 0, 78);
-    border-width: 2px;
-}
-
-.acordion-cuerpo {
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-    background-color: antiquewhite;
-    opacity: 55%;
-    font-size: 25px;
-    font-family: 'Ubuntu', sans-serif;
-    border-radius: 15px;
-    border-style: solid;
-    border-color: rgb(85, 0, 78);
-    border-width: 2px;
-}
-
-.acordion-elementos {
-    border-radius: 10px;
-    margin-bottom: 15px;
-}
-
-.historia div p {
-    text-align: center;
-    margin-left: 4%;
-    margin-right: 4%;
-    font-family: 'Ubuntu', sans-serif;
-}
-p {
-    font-size: larger;
-    background-color: antiquewhite;
-    opacity: 35%;
-    font-family: 'Ubuntu', sans-serif;
-    border-style: solid;
-    border-color: rgb(85, 0, 78);
-    border-width: 2px;
-}
-
-.actores div p {
-    height: 350px;
-    overflow: auto;
-    font-family: 'Ubuntu', sans-serif;
-    border-style: solid;
-    border-color: rgb(85, 0, 78);
-    border-width: 2px;
-}
-.contacto div {
-    text-align: center;
-}
-
-div ul li label {
-    font-size: larger;
-    background-color: antiquewhite;
-    opacity: 35%;
-    font-family: 'Ubuntu', sans-serif;
-}
-
-/*posicion de elementos*/
-
-nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+body {
+  background-image: url(https://th.bing.com/th/id/R.fe1e5b7e184e1755dd207e3b0937a6df?rik=S%2f6M%2bXS9%2fGUF2A&pid=ImgRaw&r=0);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .galeria div {
-    text-align: center;
+  text-align: center;
+  justify-content: center;
+}
+.galeria .calecita {
+  text-align: center;
+  justify-content: center;
+}
+.galeria .calecita .calecita-completa {
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+.galeria .calecita .calecita-completa .calecita-contenedor h5 {
+  color: white;
+}
+.galeria .calecita .calecita-completa .calecita-contenedor .calecita-elementos div {
+  text-align: center;
+  justify-content: center;
+}
+.galeria .calecita .calecita-completa .calecita-contenedor .calecita-derecha-icon {
+  background-image: url(../imagenes/next.png);
+}
+.galeria .calecita .calecita-completa .calecita-contenedor .calecita-izquierda-icon {
+  background-image: url(../imagenes/prev.png);
 }
 
+.galeria .mobile {
+  display: none;
+}
+
+@media (max-width: 875px) {
+  .galeria .mobile {
+    display: block;
+  }
+  .galeria .desktop {
+    display: none;
+  }
+}
 .actores div {
-    display: flex;
-    justify-content: center;
-    margin-top: 1%;
-    margin-left: 4%;
-    margin-right: 4%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 1%;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+.actores div p {
+  background-color: antiquewhite;
+  opacity: 35%;
+  overflow: auto;
+  border-style: solid;
+  border-color: rgb(85, 0, 78);
+  border-width: 2px;
+}
+
+.actores .desktop p {
+  height: 375px;
 }
 
 .actores .mobile {
-    display: flex;
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .actores .mobile {
+    display: block;
+  }
+  .actores {
     justify-content: center;
-    margin-top: 1%;
-    margin-left: 4%;
-    margin-right: 4%;
-}
-
-.actores .mobile img {
-    width: 100%;
-}
-
-.calecita {
-    justify-content: center;
-    text-align: center;
-}
-
-.calecita-completa {
-    padding-bottom: 40px;
-    padding-top: 40px;
-}
-
-.calecita-principal {
-    text-align: center;
-}
-
-.calecita-derecha-icon {
-    background-image: url(../imagenes/next.png);
-}
-
-.calecita-izquierda-icon {
-    background-image: url(../imagenes/prev.png);
-}
-
-.calecita-contenedor h5{
-    font-size: 25px;
-    font-family: 'Ubuntu', sans-serif;
-    color: white;
-}
-
-.mobile div div {
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-}
-
-/*-----------*/
-
-.actores .mobile {
+  }
+  .actores .desktop {
     display: none;
+  }
+}
+.historia .acordion {
+  opacity: 50%;
+  margin-bottom: 15px;
+  margin-left: 4%;
+  margin-right: 4%;
+  border-radius: 10px;
+}
+.historia .acordion .acordion-elementos {
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.historia .acordion .acordion-elementos .acordion-cabeza {
+  background-color: antiquewhite;
+  opacity: 80%;
+  list-style: none;
+  cursor: pointer;
+  text-align: center;
+  justify-content: center;
+  border-radius: 15px;
+  border-style: solid;
+  border-color: rgb(85, 0, 78);
+  border-width: 2px;
+}
+.historia .acordion .acordion-elementos .acordion-cuerpo {
+  background-color: antiquewhite;
+  opacity: 65%;
+  border-radius: 15px;
+  border-style: solid;
+  border-color: rgb(85, 0, 78);
+  border-width: 2px;
 }
 
-@media (max-width: 575px) {
-    .actores .mobile {
-        display: block;
-    }
-
-    .actores {
-        justify-content: center;
-    }
-
-    .actores .desktop {
-        display: none;
-    }
+div {
+  text-align: center;
+  justify-content: center;
+}
+div form ul li label {
+  text-decoration: none;
+  list-style: none;
+  background-color: antiquewhite;
+  opacity: 55%;
 }
 
-
-.inicio .mobile {
-    display: none;
-}
-
-@media (max-width: 575px) {
-    .inicio .mobile {
-        display: block;
-    }
-
-    .inicio .desktop {
-        display: none;
-    }
-}
-
-.pie-pagina div a {
-    width: 100%;
-}
-
-#map {
-    width: 100%;
-}
+/*# sourceMappingURL=style.css.map */

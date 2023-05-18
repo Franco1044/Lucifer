@@ -1,0 +1,9 @@
+@mixin opacidad($bg-c, $opacidad){
+    background-color: $bg-c;
+    opacity: $opacidad;
+};
+
+@mixin posicion($text-a, $justify-c){
+    text-align: $text-a;
+    justify-content: $justify-c;
+};
