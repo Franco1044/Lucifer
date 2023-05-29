@@ -1,6 +1,5 @@
 .historia {
     .acordion {
-        opacity: 50%;
         margin-bottom: 15px;
         margin-left: 4%;
         margin-right: 4%;
@@ -12,7 +11,7 @@
 
             .acordion-cabeza {
                 @extend %tipografia;
-                @include opacidad(antiquewhite, 80%);
+                @include opacidad(antiquewhite, 65%);
                 list-style: none;
                 cursor: pointer;
                 @include posicion (center, center);
@@ -24,7 +23,7 @@
 
             .acordion-cuerpo {
                 @extend %tipografia;
-                @include opacidad(antiquewhite, 65%);
+                @include opacidad(antiquewhite, 55%);
                 border-radius: map-get($borde, b-r );
                 border-style: map-get($borde, b-s );
                 border-color: map-get($borde , b-c);

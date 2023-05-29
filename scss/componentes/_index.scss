@@ -10,7 +10,7 @@ main {
 .inicio {
     p {
         @extend %tipografia;
-        @include opacidad(antiquewhite, 35%);
+        @include opacidad(antiquewhite, 55%);
         overflow: auto;
         border-style: map-get($borde, b-s);
         border-color: map-get($borde, b-c);
